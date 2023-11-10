@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Saffire Academy</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="saffire.css">
+        <link rel = "stylesheet" href="css/font-awesome.css">
+        <link rel = "stylesheet" href="css/font-awesome.min.css"> <!--https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css-->
+        <!-- wow Animation css -->
+        <link rel="stylesheet" href="css/animate.css" />
+        <!-- revolution slider css -->
+        <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" />
+        <link rel="stylesheet" type="text/css" href="revolution/css/layers.css" />
+        <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css" />
+    </head>
+    <body>
+
+        <!--TOP-->
+
+        <section class="top">
+            <div class="row d-flex justify-content-between p-3 px-5">
+                <div class="col-sm-4 justify-content-between d-flex respontop">
+                    <div class="img-fluid">
+                        <img src="images/saffire-logo.png" alt="logo" width="100%" height="65%" />
+                    </div>
+                    <div class="enroll mt-3">
+                        <h6 class="p-2"><a class="text-decoration-none p-2" href="enrollment.html">ENROLLMENT</a></h6>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <button class="btn btnmenu" id="btnmenu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                      </button>
+                    <ul class="first-ul list-unstyled justify-content-between" id="navbar">
+                        <li class="li-items py-0 px-2"><a href="saffire.html" id="a" style="color: rgb(238, 171, 46);">Home</a></li>
+                        <li class="li-items py-0 px-2 hoverables"><a href="about.html" id="a">About Us</a><i class="fa fa-caret-down carr"></i>
+                            <ul class="hidden-navs list-unstyled">
+                                <li class="py-2 px-3 bg-white sub-hover"><a class="sub-a text-decoration-none fw-light" href="leadership.html">Leadership</a></li>
+                                <li><hr class="dropdown-divider m-0"></li>
+                                <li class="py-2 px-3 bg-white sub-hover"><a class="sub-a text-decoration-none fw-light" href="policy.html">Our Policies</a></li>
+                                <li><hr class="dropdown-divider m-0"></li>
+                                <li class="py-2 px-3 bg-white sub-hover"><a class="sub-a text-decoration-none fw-light" href="board.html">Board of Directors</a></li>
+                            </ul>
+                        </li>
+                        <li class="li-items py-0 px-2 hoverables"><a href="#" id="a">Our Work</a><i class="fa fa-caret-down carr"></i>
+                            <ul class="hidden-navs list-unstyled">
+                                <li class="py-2 px-3 bg-white sub-hover"><a class="sub-a text-decoration-none fw-light" href="academics.html">Education</a></li>
+                                <li><hr class="dropdown-divider m-0"></li>
+                                <li class="py-2 px-3 bg-white sub-hover"><a class="sub-a text-decoration-none fw-light" href="athletics.html">Athletics</a></li>
+                            </ul>
+                        </li>
+                        <li class="li-items py-0 px-2 hoverables"><a href="academics.html" id="a">Academics</a><i class="fa fa-caret-down carr"></i>
+                            <ul class="hidden-navs list-unstyled">
+                                <li class="py-2 px-3 bg-white sub-hover"><a class="sub-a text-decoration-none fw-light" href="elementary.html">Elementary School</a></li>
+                                <li><hr class="dropdown-divider m-0"></li>
+                                <li class="py-2 px-3 bg-white sub-hover"><a class="sub-a text-decoration-none fw-light" href="middle.html">Middle School</a></li>
+                                <li><hr class="dropdown-divider m-0"></li>
+                                <li class="py-2 px-3 bg-white sub-hover"><a class="sub-a text-decoration-none fw-light" href="high.html">High School</a></li>
+                            </ul>
+                        </li>
+                        <li class="li-items py-0 px-2 hoverables"><a href="#" id="a">Portal</a><i class="fa fa-caret-down carr"></i>
+                            <ul class="hidden-navs list-unstyled">
+                                <li class="py-2 px-3 bg-white sub-hover"><a class="sub-a text-decoration-none fw-light" href="register.html">Register</a></li>
+                                <li><hr class="dropdown-divider m-0"></li>
+                                <li class="py-2 px-3 bg-white sub-hover"><a class="sub-a text-decoration-none fw-light" href="login.html">Login</a></li>
+                            </ul>
+                        </li>
+                        <li class="li-items py-0 px-2"><a href="contact.html" id="a">Contact</a></li>
+                        <li class="li-items py-0 px-2"><a href="#" id="search_icon"><i class="fa fa-search"></i></a></li>
+                        <div class="search-page d-flex align-items-center justify-content-center" id="search_page">
+                            <div class="p-5 text-center search">
+                              <div class="d-flex">
+                                <input type="text" placeholder="Type to search" onkeydown="keyPress(event)">
+                                <a href="saffire.html"><i class="fa fa-search text-white"></i></a>
+                              </div>
+                              <p class="text-white pt-3 text-start" style="font-size: 15px;">Begin typing your search above and press return to search.</p>
+                            </div>
+                            <div class="search-closebtn" id="search_closebtn">
+                              <div class="bg-white p-4">
+                                <a href="#"><i class="fa fa-close text-dark" style="font-size: 20px;"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!--SLIDER-->
+        
+        <section class="slider mt-5">
+            <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullscreen-container pt-5" data-alias="classicslider1">
+                <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
+            <div id="rev_slider_4_1" class="rev_slider tp-overflow-hidden fullscreenbanner" data-version="5.0.7" style="display: none;">
+                <ul>
+                    <!--Slide 1-->
+                    <li data-index="rs-6577382" data-transition="Fade" data-thumb="images/7.png"  data-title="Female basketball" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut">
+                        <!-- MAIN IMAGE -->
+                        <img src="images/7.png" alt="#"  data-bgposition="right center" data-kenburns="on" data-duration="30000" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina loading="lazy">
+                        <!--Begin Layer-->
+                        <div class="tp-caption tp-resizeme"
+                        data-frames='[{
+                            "delay": 500, "speed": 300, "from": "opacity: 0", "to": "opacity: 1"},{
+                                "delay": "wait", "speed": 300, "to": "opacity: 0"
+                            }]'
+                            data-x="center" data-y="bottom" data-hoffset="0" data-vofset="0" data-width="full" data-height="['50']" data-basealign="slide" style="z-index: 2; background-color: rgba(0, 0, 0, 0.25); color: white; font-family: opensans; font-size: 30px; text-align: center;"
+                            >High School Female Basketball Team</div>
+                    </li>
+                    <!--Slide 2-->
+                    <li data-index="rs-657738" data-transition="Fade" data-thumb="images/3.jpg"  data-title="Female basketball" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut">
+                        <!-- MAIN IMAGE -->
+                        <img src="images/3.jpg" alt="#"  data-bgposition="center center" data-kenburns="on" data-duration="30000" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina loading="lazy">
+                        <!--Begin Layer-->
+                        <div class="tp-caption tp-resizeme"
+                        data-frames='[{
+                            "delay": 500, "speed": 300, "from": "opacity: 0", "to": "opacity: 1"},{
+                                "delay": "wait", "speed": 300, "to": "opacity: 0"
+                            }]'
+                            data-x="center" data-y="bottom" data-hoffset="0" data-vofset="0" data-width="full" data-height="['50']" data-basealign="slide" style="z-index: 2; background-color: rgba(0, 0, 0, 0.25); color: white; font-family: opensans; font-size: 30px; text-align: center;"
+                            >Midde School Tug of War</div>
+                    </li>
+                    <!--Slide 3-->
+                    <li data-index="rs-65773" data-transition="Fade" data-thumb="images/13.jpg"  data-title="Female basketball" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut">
+                        <!-- MAIN IMAGE -->
+                        <img src="images/13.jpg" alt="#"  data-bgposition="center center" data-kenburns="on" data-duration="30000" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina loading="lazy">
+                        <!--Begin Layer-->
+                        <div class="tp-caption tp-resizeme"
+                        data-frames='[{
+                            "delay": 500, "speed": 300, "from": "opacity: 0", "to": "opacity: 1"},{
+                                "delay": "wait", "speed": 300, "to": "opacity: 0"
+                            }]'
+                            data-x="center" data-y="bottom" data-hoffset="0" data-vofset="0" data-width="full" data-height="['50']" data-basealign="slide" style="z-index: 2; background-color: rgba(0, 0, 0, 0.25); color: white; font-family: opensans; font-size: 30px; text-align: center;"
+                            >Middle School Female Foottball Team</div>
+                    </li>
+                    <!--Slide 4-->
+                    <li data-index="rs-6577" data-transition="Fade" data-thumb="images/19.jpg"  data-title="Female basketball" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut">
+                        <!-- MAIN IMAGE -->
+                        <img src="images/19.jpg" alt="#"  data-bgposition="right center" data-kenburns="on" data-duration="30000" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina loading="lazy">
+                        <!--Begin Layer-->
+                        <div class="tp-caption tp-resizeme"
+                        data-frames='[{
+                            "delay": 500, "speed": 300, "from": "opacity: 0", "to": "opacity: 1"},{
+                                "delay": "wait", "speed": 300, "to": "opacity: 0"
+                            }]'
+                            data-x="center" data-y="bottom" data-hoffset="0" data-vofset="0" data-width="full" data-height="['50']" data-basealign="slide" style="z-index: 2; background-color: rgba(0, 0, 0, 0.25); color: white; font-family: opensans; font-size: 30px; text-align: center;"
+                            >School Carnival Night</div>
+                    </li>
+                    <!--Slide 5-->
+                    <li data-index="rs-657" data-transition="Fade" data-thumb="images/22.jpg"  data-title="Female basketball" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut">
+                        <!-- MAIN IMAGE -->
+                        <img src="images/22.jpg" alt="#"  data-bgposition="right center" data-kenburns="on" data-duration="30000" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina loading="lazy">
+                        <!--Begin Layer-->
+                        <div class="tp-caption tp-resizeme"
+                        data-frames='[{
+                            "delay": 500, "speed": 300, "from": "opacity: 0", "to": "opacity: 1"},{
+                                "delay": "wait", "speed": 300, "to": "opacity: 0"
+                            }]'
+                            data-x="center" data-y="bottom" data-hoffset="0" data-vofset="0" data-width="full" data-height="['50']" data-basealign="slide" style="z-index: 2; background-color: rgba(0, 0, 0, 0.25); color: white; font-family: opensans; font-size: 30px; text-align: center;"
+                            >High School Male Basketball Team</div>
+                    </li>
+                    <!--Slide 6-->
+                    <li data-index="rs-65" data-transition="Fade" data-thumb="images/29.jpg"  data-title="Female basketball" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut">
+                        <!-- MAIN IMAGE -->
+                        <img src="images/29.jpg" alt="#"  data-bgposition="right center" data-kenburns="on" data-duration="30000" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina loading="lazy">
+                        <!--Begin Layer-->
+                        <div class="tp-caption tp-resizeme"
+                        data-frames='[{
+                            "delay": 500, "speed": 300, "from": "opacity: 0", "to": "opacity: 1"},{
+                                "delay": "wait", "speed": 300, "to": "opacity: 0"
+                            }]'
+                            data-x="center" data-y="bottom" data-hoffset="0" data-vofset="0" data-width="full" data-height="['50']" data-basealign="slide" style="z-index: 2; background-color: rgba(0, 0, 0, 0.25); color: white; font-family: opensans; font-size: 30px; text-align: center;"
+                            >High School Female Volleyball Team</div>
+                    </li>
+                </ul>
+                <div class="tp-bannertimer tp-bottom" style="height: 5px; background-color: maroon;"></div>
+            </div>
+            </div>
+        </section>
+        
+        
+
+        <!--INTRO-->
+
+        <section class="container-fluid intro p-5">
+            <div class="px-5">
+                <h1 class="text-center fw-bold">Welcome to Saffire Academy!</h1>
+                <p class="text-center pt-3">At Saffire Academy, our mission is to foster a dynamic and inclusive educational environment that empowers students to become critical thinkers, empathical and passionate leaders, and forever learners. We are dedicated to providing a diverse and innovative curriculum that nurtures the intellectual, social, and emotional growth of each child. Through our commitment to excellence, we aim to motivate a future generation of responsible citizens who can contribute positive things to the society.</p>
+                <p class="text-center pt-3">Our vision is a world where every student is equipped with the knowledge, skills, commitment and values to thrive in an ever-evoloving society. We strive to be a centre of educational excellence that celebrates diversity, encourages creativity and fosters a strong sense of community. Our Vision is to inspire and prepare students to embrace challenges, adapt to change and make a positive impact to the society and the world in general.</p>
+                <br/>
+                <a class="p-3 text-center fw-bold text-decoration-none d-flex align-items-center justify-content-center" href="about.html" style="margin: auto; background: maroon; color: rgb(238, 171, 46); width: 30%;">About Us</a>
+            </div>
+        </section>
+
+        <!--ACADEMICS-->
+
+        <section class="container-fluid academics p-5">
+            <div class="row px-3">
+
+                <div class="col-md-6 responcol">
+                    <a href="elementary.html">
+                        <div class="elementary  position-relative">
+                            <span class="d-flex align-items-center justify-content-center">
+                                <h5 class="text-center fw-bold head">ELEMENTARY SCHOOL</h5>
+                                <p class="text-center">We believe that young minds are like newly formed galaxies. Full of energy, expansive and curious. Poised to stretch out and make their mark in the universe. At our Elementary school, we help the students discover their brilliance and potential.</p>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="middle  position-relative">
+                        <a href="middle.html">
+                            <span class="d-flex align-items-center justify-content-center">
+                                <h5 class="text-center fw-bold head">MIDDLE SCHOOL</h5>
+                                <p class="text-center">Here we envision every student becoming a world-class philosopher, mathematician or natural scientist. We encourage students to become critical thinkers and to explore and experiment with their talents and discover their purpose.</p>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-12 pt-5">
+                    <div class="high  position-relative">
+                        <a href="high.html">
+                            <span class="d-flex align-items-center justify-content-center">
+                                <h5 class="text-center fw-bold head">HIGH SCHOOL</h5>
+                                <p class="text-center">Here we envision every student becoming a world-class philosopher, mathematician or natural scientist. We encourage students to become critical thinkers and to explore and experiment with their talents and discover their purpose.</p>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SOCIAL-->
+
+        <section class="container-fluid social p-5">
+            <h2 class="text-center fw-bold">LIFE AT SAFFIRE ACADEMY</h2>
+            <ul class="list-unstyled d-flex p-3 text-center justify-content-center">
+                <li class="p-4"><a class="text-decoration-none" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="p-4"><a class="text-decoration-none" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="p-4"><a class="text-decoration-none" href="#"><i class="fa fa-youtube"></i></a></li>
+                <li class="p-4"><a class="text-decoration-none" href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </section>
+
+        <!--GALLERY-->
+
+        <section class="container-fluid gallery p-5">
+            <div class="row p-3">
+
+                <div class="col-lg-6">
+                    <img src="images/20.png" alt="library" width="90%" height="90%" class=" transform-image"/>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row">
+
+                        <div class="col-md-6 p-3">
+                            <img src="images/2.jpg" alt="science fair" width="90%" height="90%" class=" transform-image"/>
+                        </div>
+                        <div class="col-md-6 p-3">
+                            <img src="images/9.png" alt="cafeteria" width="90%" height="90%" class=" transform-image"/>
+                        </div>
+                        <div class="col-md-6 p-3">
+                            <img src="images/22.jpg" alt="basketball" width="90%" height="90%" class=" transform-image"/>
+                        </div>
+                        <div class="col-md-6 p-3">
+                            <img src="images/23.jpg" alt="elementary school kids" width="90%" height="90%" class=" transform-image"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--FOOTER-->
+
+        <section class="container-fluid footer p-o mt-3">
+            <div class="row p-5 pt-4 pb-2 responrow">
+
+                <div class="col-md-4 responcol">
+                    <h4 class="pb-2">Contact Us</h4>
+                    <div class="d-flex footer-info pt-2">
+                        <i class="fa fa-map-marker"></i>
+                        <p class="mx-2">20 Stillwater Street<br/>Reude Island</p>
+                    </div>
+                    <div class="d-flex footer-info pt-2">
+                        <i class="fa fa-phone"></i>
+                        <p class="mx-2">(402) 273-9999</p>
+                    </div>
+                    <div class="d-flex footer-info pt-2">
+                        <i class="fa fa-envelope"></i>
+                        <p class="mx-2">saffire@acad.edu</p>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <h4 class="pb-2">About Us</h4>
+                            <ul class="list-unstyled">
+                                <li class="py-2"><a class="text-decoration-none text-white" href="leadership.html">Leadership</a></li>
+                                <li class="py-2"><a class="text-decoration-none text-white" href="policy.html">Our Policies</a></li>
+                                <li class="py-2"><a class="text-decoration-none text-white" href="board.html">Board of Directors</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h4 class="pb-2">Our Work</h4>
+                            <ul class="list-unstyled">
+                                <li class="py-2"><a class="text-decoration-none text-white" href="academics.html">Education</a></li>
+                                <li class="py-2"><a class="text-decoration-none text-white" href="athletics.html">Athletics</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h4 class="pb-2">Academics</h4>
+                            <ul class="list-unstyled">
+                                <li class="py-2"><a class="text-decoration-none text-white" href="elementary.html">Elementary School</a></li>
+                                <li class="py-2"><a class="text-decoration-none text-white" href="middle.html">Middle School</a></li>
+                                <li class="py-2"><a class="text-decoration-none text-white" href="high.html">High School</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h4 class="pb-2">Portal</h4>
+                            <ul class="list-unstyled">
+                                <li class="py-2"><a class="text-decoration-none text-white" href="register.html">Register</a></li>
+                                <li class="py-2"><a class="text-decoration-none text-white" href="login.html">Login</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <p class="text-center pt-3" style="color: rgb(238, 171, 46); font-size: 13px;">Designed and developed by thesmallshaq</p>
+            </div>
+        </section>
+
+    </body>
+
+
+    <!-- revolution js files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <!-- wow animation -->
+    <script src="js/wow.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/saffire.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+          jQuery('#rev_slider_4_1').show().revolution({
+            hideThumbsOnMobile: "on", keyboardNavigation: 'on', keyboard_direction: 'horizontal',
+            delay: 9000, //stopLoop: "on", stopAfterLoops: 0, stopAtSlide: 1,
+            sliderLayout: "auto",
+            
+            minHeight: '500', lazyType: "smart",  navigation: {
+            arrows: {
+              enable: true, style: "zeus", tmp: '<div class="tp-title-wrap"><div class="tp-arr-imgholder"></div></div>', hide_onleave: false, hide_onmobile: true,
+            },
+            bullets: {
+              enable: false, style: "zeus", tmp: '', hide_onleave: false, h_align: "center", v_align: "bottom", h_offset: 0, v_offset: 20, space: 5
+            },
+            touch: {
+                touchenabled: 'on', swipe_threshold: 75, swipe_min_touches: 1, swipe_direction: 'horizontal', drag_block_vertical: true,
+            }
+          }
+        });
+        })
+      </script>
+
+
+</html>    
+    
