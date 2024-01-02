@@ -298,7 +298,7 @@ span:hover h5{
 }
 
 
-@media(max-width: 991px/*767px/*575*/){
+@media (max-width: 767px/*767px/*575*/){
     .top .responrow{
         padding-bottom: 0 !important; padding-top: 17% !important;
     }
@@ -319,20 +319,26 @@ span:hover h5{
         width: 100vw !important; text-align: center; background-color: maroon; font-weight: 200;
         position: relative !important; top: 10% !important; left: 0 !important; box-shadow: none !important;
     }
-    .sub-hover{
+    .hidden-navs #hr-li{
+        padding: 0px !important;
+    }
+    .hidden-navs .sub-hover{
         background: none !important;
     }
     .sub-a{
-        color: #000000 !important; font-size: 13px !important; font-weight: 400 !important;
+        color: #000000 !important; font-size: 13px !important; font-weight: 400 !important; padding: 1px !important;
     }
     .hidden-navs{
         background: rgb(238, 171, 46) !important;
     }
-    .hidden-navs .li a{
+    /*.hidden-navs .li a{
         color: maroon !important;
-    }
+    }*/
     .first-ul li{
-        font-weight: 500 !important; color: #000000 !important; font-size: 17px; text-align: left !important; padding-top: 5% !important;
+        font-weight: 500 !important; color: #000000 !important; font-size: 17px;
+    }
+    .first-ul .li-items{
+        margin-top: 5% !important;
     }
     .first-ul #a{
         padding: 1% !important; color: rgb(238, 171, 46) !important; font-size: 16px !important; margin-bottom: 1% !important;
@@ -380,6 +386,9 @@ span:hover h5{
     }
     .intro div{
         padding: 3% !important;
+    }
+    .intro div a{
+        width: 100% !important;
     }
 
     .academics .responcol{
@@ -441,8 +450,10 @@ span:hover h5{
 }
 
 
-/*@media(max-width: 991px){
-    .academics-body, .academics-body .responrow{
-        padding: 2% !important;
+@media (max-width: 767px) and (min-width: 578px){
+    
+    
+    .respontop{
+        justify-content: space-between !important; width: 50% !important; margin-top: 3% !important;
     }
-}*/
+}
